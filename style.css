@@ -186,9 +186,6 @@ span{
     object-fit:cover;
     box-shadow:0 0 25px var(--main-color);
 }
-.about-content{
-    flex:1;
-}
 
 .about-img{
     flex:1;
@@ -211,6 +208,7 @@ span{
 
 .about-content{
     padding:0 4rem;
+    flex:1;
 }
 
 .about-content h2{
@@ -471,9 +469,13 @@ span{
     }
 
     .about-img img{
-        width:70vw;
-        margin-top:4rem;
-    }
+    width:70vw;
+    max-width:320px;
+    height:70vw;
+    max-height:320px;
+    margin-top:4rem;
+}
+
 }
 
 @media (max-width:617px){
@@ -487,5 +489,6 @@ span{
 @media (max-width:617px){
     html{ font-size:50%; }
 }
+
 
 
