@@ -27,7 +27,6 @@ body{
 }
 
 section{
-    min-height:100vh;
     padding:10rem 9% 2rem;
 }
 
@@ -181,11 +180,11 @@ span{
 }
 
 .about-img img{
-    border-radius:50%;
-    box-shadow:0 0 25px var(--main-color);
-    cursor:pointer;
-    transition:0.4s ease;
+    width:320px;
+    height:320px;
+    object-fit:cover;
 }
+
 
 .about-img img:hover{
     box-shadow:0 0 25px var(--main-color),
@@ -476,3 +475,4 @@ span{
 @media (max-width:617px){
     html{ font-size:50%; }
 }
+
