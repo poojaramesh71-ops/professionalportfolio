@@ -11,7 +11,7 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-const typed = new Typed('.multiple-text', {
+new Typed('.multiple-text', {
     strings: [
         'Frontend Developer',
         'Backend Developer',
@@ -24,3 +24,4 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1200,
     loop: true
 });
+
