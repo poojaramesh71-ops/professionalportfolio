@@ -276,6 +276,8 @@ span{
 
 .testimonial-box img{
     width:15rem;
+    height:15rem;
+    object-fit:cover;
     border-radius:50%;
     border:3px solid var(--main-color);
     box-shadow:0 0 25px var(--main-color);
