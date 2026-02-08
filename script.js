@@ -24,4 +24,3 @@ new Typed('.multiple-text', {
     backDelay: 1200,
     loop: true
 });
-
