@@ -6,18 +6,11 @@ menu.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-window.onscroll = () => {
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
-};
-
 new Typed('.multiple-text', {
     strings: [
         'Frontend Developer',
         'Backend Developer',
-        'Blockchain Developer',
-        'Web Developer',
-        'Youtuber'
+        'Web Developer'
     ],
     typeSpeed: 80,
     backSpeed: 80,
