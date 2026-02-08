@@ -3,9 +3,6 @@
     padding:0;
     box-sizing:border-box;
     text-decoration:none;
-    border:none;
-    outline:none;
-    scroll-behavior:smooth;
     font-family:-apple-system,sans-serif;
 }
 
@@ -44,27 +41,27 @@ section{
 
 .logo{
     font-size:3rem;
-    color:var(--bg-color);
+    color:#fff;
     font-weight:700;
 }
 
 .navbar a{
     font-size:1.9rem;
-    color:var(--bg-color);
+    color:#fff;
     margin-left:4rem;
     font-weight:700;
 }
 
 #menu-icon{
     font-size:3.6rem;
-    color:var(--bg-color);
+    color:#fff;
     display:none;
 }
 
 .home{
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 }
 
 .home-img img{
@@ -83,7 +80,8 @@ section{
 
 span{color:var(--main-color);}
 
-.social-media a{
+.social-media a,
+.footer .social a{
     width:42px;
     height:42px;
     border:0.2rem solid var(--main-color);
@@ -91,49 +89,33 @@ span{color:var(--main-color);}
     font-size:2rem;
     color:var(--main-color);
     display:inline-flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     margin:3rem 1.5rem 3rem 0;
+    transition:0.3s ease;
+}
+
+/* ✨ SHINE EFFECT */
+.social-media a:hover,
+.footer .social a:hover{
+    background:var(--main-color);
+    color:#fff;
+    box-shadow:0 0 15px var(--main-color),
+               0 0 30px var(--main-color);
+    transform:translateY(-3px);
+}
+
+.social-media a:active,
+.footer .social a:active{
+    transform:scale(0.95);
 }
 
 .btn{
     padding:1rem 2.8rem;
     background:var(--main-color);
     border-radius:4rem;
-    color:var(--bg-color);
+    color:#fff;
     font-size:1.6rem;
-}
-
-.about{
-    display:flex;
-    gap:2rem;
-    background:var(--snd-bg-color);
-}
-
-.about-img img{
-    width:320px;
-    height:320px;
-    border-radius:50%;
-    box-shadow:0 0 25px var(--main-color);
-}
-
-.heading{
-    font-size:6rem;
-    text-align:center;
-}
-
-.services-container{
-    display:flex;
-    gap:2rem;
-    flex-wrap:wrap;
-}
-
-.services-box{
-    flex:1 1 30rem;
-    background:var(--snd-bg-color);
-    padding:6rem 2rem;
-    border-radius:2rem;
-    text-align:center;
 }
 
 .testimonial{
@@ -144,13 +126,6 @@ span{color:var(--main-color);}
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:3rem;
-}
-
-.testimonial-item{
-    background:#fff;
-    padding:2rem;
-    border-radius:2rem;
-    text-align:center;
 }
 
 .testimonial-img{
@@ -169,24 +144,6 @@ span{color:var(--main-color);}
     object-fit:cover;
 }
 
-.contact form{
-    max-width:80rem;
-    margin:auto;
-}
-
-.input-box{
-    display:flex;
-    gap:1rem;
-}
-
-input, textarea{
-    width:100%;
-    padding:1.5rem;
-    font-size:1.6rem;
-    border:0.25rem solid var(--main-color);
-    border-radius:0.8rem;
-}
-
 .footer{
     padding:40px 0;
     background:var(--snd-bg-color);
@@ -195,20 +152,5 @@ input, textarea{
 
 @media (max-width:991px){
     #menu-icon{display:block;}
-
-    .navbar{
-        position:absolute;
-        top:100%;
-        right:-100%;
-        width:100%;
-        background:var(--main-color);
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        transition:0.3s;
-    }
-
-    .navbar.active{right:0;}
-
     .wrapper{grid-template-columns:1fr;}
 }
