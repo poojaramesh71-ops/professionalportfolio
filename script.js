@@ -6,6 +6,13 @@ menu.classList.toggle('bx-x');
 navbar.classList.toggle('active');
 };
 
+document.querySelectorAll('.navbar a').forEach(link => {
+link.addEventListener('click', () => {
+menu.classList.remove('bx-x');
+navbar.classList.remove('active');
+});
+});
+
 new Typed('.multiple-text', {
 strings: [
 'Frontend Developer',
